@@ -307,13 +307,26 @@ nav input {
 }
 
 .body-text {
-  position: absolute;
-  top: 30%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: left;
-  padding: 0 30px;
+  position: relative;  
+  margin: auto;        
+  width: 60%;          
+  padding: 30px;       
+  top: 3em;           
+}
+
+.body-text p, 
+.body-text h2, 
+.body-text h3 {
+    margin-top: 20px;  /* adjust this value as required */
+    margin-bottom: 20px;  /* adjust this value as required */
+}
+
+.body-text p {
+  font-size: 16px;  
+  line-height: 1.5;  
+  color: #333;  
+  font-family: 'Arial', sans-serif;  
+  text-align: justify;  
 }
 
 .body-text div {
