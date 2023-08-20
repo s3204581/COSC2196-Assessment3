@@ -12,7 +12,7 @@
 <body>
   <nav>
     <div class="wrapper">
-      <div class="logo"><a href="/index.html">The Agile Expensables - Assignment 3</a></div>
+      <div class="logo"><a href="#">The Agile Expensables - Assignment 3</a></div>
       <input type="radio" name="slider" id="menu-btn">
       <input type="radio" name="slider" id="close-btn">
       <ul class="nav-links">
@@ -24,11 +24,12 @@
           <label for="showDrop" class="mobile-item">The Team</label>
           <ul class="drop-menu">
             <li><a href="/team_profile.html">Team Profiles</a></li>
+            <li><a href="/groupprocesses.html">Group Processes</a></li>
             <li><a href="/reflections.html">Reflections</a></li>
           </ul>
         </li>
         <li>
-          <a href="#" class="desktop-item">Project Team</a>
+          <a href="#" class="desktop-item">Our Project</a>
           <input type="checkbox" id="showMega">
           <label for="showMega" class="mobile-item">Main Menu</label>
           <div class="mega-box">
@@ -37,13 +38,14 @@
                 <header>Project Team</header>
                 <ul class="mega-links">
                   <li><a href="/team_profile.html">Team Profile</a></li>
+                  <li><a href="/groupprocesses.html">Group Processes</a></li>
                   <li><a href="/reflections.html">Group Reflection</a></li>
                 </ul>
               </div>
               <div class="row">
                 <header>The Project</header>
                 <ul class="mega-links">
-                  <li><a href="#">Project Description</a></li>
+                  <li><a href="/projectdescription.html">Project Description</a></li>
                   <li><a href="project-overview.html">Overview</a></li>
                   <li><a href="#">Skills and Jobs</a></li>
                   <li><a href="#">Feedback</a></li>
@@ -55,7 +57,7 @@
                   <li><a href="/projectaims.html">Aims</a></li>
                   <li><a href="/plansprogress.html">Plans and Progress</a></li>
                   <li><a href="/roles.html">Roles</a></li>
-                  <li><a href="#">Scope and Limits</a></li>
+                  <li><a href="/scopelimits.html">Scope and Limits</a></li>
                   <li><a href="#">Tools and Technologies</a></li>
                   <li><a href="#">Testing</a></li>
                   <li><a href="#">Timeframe</a></li>
@@ -79,36 +81,27 @@
   </nav>
 
   <div class="body-text">
-    <h2>Assignment Tools</h2>
-    <br>
-    <p>https://github.com/s3204581/COSC2196-Assessment3
+    <h2>Testing</h2>
+    <p>
+      Testing was conducted as part of each MVF (Minimum Viable Feature) which would be initially defined with a series
+      of Use Cases to gauge user operability and customer value. This small-scale design scheme meant that testing was
+      involved as part of the planning for viability and function of features so that the group could plan how to
+      dedicate their resources. If, for example, a particular function was not aligning with the use case, the group
+      could decide on its feasibility and potentially look at mitigation options.
 
-      <br>This link is our report website, which serves as a repository for our final report.<br>
+      <br><br>Further testing of the prototype was also encouraged by all team members throughout the project lifecycle with any
+      reported bugs noted down in an Issues Register. This artefact meant that the team could collaborate on the
+      identified bugs, prioritise time, allocate resources and build a resolution strategy based off metrics such as the
+      impact of the bug to the overall design.
 
-
-
-      <br>https://github.com/s3204581/phishnet
-
-      <br>This link is the product website, serving as PhishNet.com<br>
-
-
-
-      <br>https://github.com/s3204581/aex-site
-
-      <br>Our product application repository, represented within a Docker container<br>
-
-
-
-      <br>https://3.25.186.33/
-
-      <br>The public IP of our application dashboard, running on an AWS EC2 Ubuntu Instance<br>
-
-
-
-      <br>The coding and framework commits would be accurate for each of these repositories however it’s important to note
-      that the actual content that was committed into the group’s report website is not indicative of the content
-      creator in that the team member committing the section of work may not necessarily be the person who created the
-      content. The group’s Trello board would be a better indicator of who provided to content overall. </p>
+      <br><br>Due to PhishNets inherent design which would invariably involve a user providing details such as Email account
+      information, it was important to also research the types of security vulnerabilities that the application may be
+      prone to and how best to mitigate these threats. An analysis of security threats and vulnerabilities was generated
+      based on the OWASP Top Ten Web Application Security Risks which is available in the glossary. As the project draws
+      closer to implementation of features such as secure login and information storage, the knowledge of risks such as
+      broken access control, cryptographic failure and injection attack must be made available to the design team to
+      implement the proper control measures and plan relevant, meaningful testing cases to support a viable product.
+    </p>
 
 </body>
 
