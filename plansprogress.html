@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">The Agile Expensables - Assignment 3</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#" class="desktop-item">The Team</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">The Team</label>
+          <ul class="drop-menu">
+            <li><a href="/team_profile.html">Team Profiles</a></li>
+            <li><a href="/groupprocesses.html">Group Processes</a></li>
+            <li><a href="/reflections.html">Reflections</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Our Project</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Main Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>Project Team</header>
+                <ul class="mega-links">
+                  <li><a href="/team_profile.html">Team Profile</a></li>
+                  <li><a href="/groupprocesses.html">Group Processes</a></li>
+                  <li><a href="/reflections.html">Group Reflection</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>The Project</header>
+                <ul class="mega-links">
+                  <li><a href="/projectdescription.html">Project Description</a></li>
+                  <li><a href="project-overview.html">Overview</a></li>
+                  <li><a href="#">Skills and Jobs</a></li>
+                  <li><a href="#">Feedback</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Project Details</header>
+                <ul class="mega-links">
+                  <li><a href="/projectaims.html">Aims</a></li>
+                  <li><a href="#">Plans and Progress</a></li>
+                  <li><a href="#">Roles</a></li>
+                  <li><a href="#">Scope and Limits</a></li>
+                  <li><a href="#">Tools and Technologies</a></li>
+                  <li><a href="#">Testing</a></li>
+                  <li><a href="#">Timeframe</a></li>
+                  <li><a href="#">Risks</a></li>
+                  <li><a href="#">Group Processes and Communications</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Utilities</header>
+                <ul class="mega-links">
+                  <li><a href="/tools.html">Tools</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Glossary</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+  <div class="body-text">
+    <h2>Plans and Progress</h2>
+    <b>Team Planning:</b>
+
+    <br>Our story begins with the team decision to firstly incorporate project management artefacts to assist in group
+    decision making, assessing feasibility when planning project features and assisting team members with work
+    transparency and progress. These frameworks would mean a team member could, for example, monitor and gauge elements
+    of the project such as function requirements, and apply skills to that area in real time without needing to ask for
+    a progress report or waste time waiting for a response for guidance or clarity from other team members. This was
+    important as with the construction of a Gantt chart, it become clear that this project would involve multiple moving
+    parts that would require the group to both work in a team and in some instances, independently of others to
+    completed multiple milestones at once. The team agreed to a Communication Plan which outlined how the group would
+    communicate, the tools that would be used and a timeframe for official meetings. A Trello board was also implemented
+    in this phase for the group to participate in planning and participating in assigned work within weekly sprints. The
+    objective of weekly meetings, as outlined within the Communication Plan was to come together and work on creating
+    any new jobs on the burndown chart as well as allocating work for the upcoming week and assess what happened in the
+    previous week. Any work that was not completed would be placed in a backlog for further assessment – this meant
+    there was an open forum for prioritising work based on requirements, ability and timeframe. Team members were able
+    to access this board at any time and provide updates on their progress to keep others informed and experience an
+    Agile methodology of project management that is commonly used within the IT industry.
+
+    <br><br><b>Project planning phase:</b>
+
+    <br><br>Research went into the assorted styles of the software development life cycle such as waterfall, spiral and
+    iterative methods and decided that an agile model would be best suited for the project as it arranges SDLC (Software
+    Development Life Cycle) phases into smaller development cycles that can ideally be accomplished in a brief timeframe
+    and further complemented the use of a Trello board to continuously evaluate project requirements based on feedback
+    and identified issues which could potentially lead to a change in scope. This also meant that the group could
+    collectively experience all the elements of implementing a project rather than spend time focusing within earlier
+    phases such as planning and potentially skipping other phases entirely that would typically come later, such as
+    testing.
+
+    <br><br>An example of this process would be our first Minimum Viable Feature (MVF): establishing a prototype
+    dashboard for
+    PhishNet. We knew that users needed a way to interact with the project and so planning around this MVF involved
+    mapping requirements – in this example mock-ups, wireframes and user scenarios – along with necessary resources – a
+    GitHub repository – and allocating it to group members – in this instance, individuals with experience in design
+    fundamentals, GitHub, html and CSS. Team members were able to record bugs and issues within the Issues Register and
+    were also able to plan their testing on these bugs based on how this artefact measured impact to the functionality
+    and design of the project. MVF progress was recorded in a spreadsheet and at the following meeting, the team could
+    base other MVFs and sprint creation based on the feedback of this development.
+
+    <br><br><b>Prototype Implementation:</b>
+
+    <br><br>The final vision for PhishNet is to have it as a cloud-hosted web app. However, during the initial stages of
+    development, we opted for a microservices architecture using Docker. This approach was chosen because a
+    microservices architecture allows for the development of individual, containerized features. Once developed
+    containerised feature can be easily added and removed from the prototypes using the docker-compose .yaml file.
+
+    <br><br>For an initial prototype we identified that we would need the following services:
+
+    <br><br>Frontend webpage
+
+    <br><br>Backend Server
+
+    <br><br>Email virus/malware scanning service.
+
+    <br><br>These services fulfill the essential requirements for the MVF of the PhishNet prototype: a user-friendly
+    website, an
+    email scanning service, and a backend to integrate them.
+
+    <br><br>Frontend:
+
+    <br><br>For the frontend we chose to use the react framework. React is a widely used web framework that is written
+    in
+    JavaScript. We chose React as we had experience using the framework and it is a well-supported framework with a
+    robust ecosystem. React also have many useful libraries. We used the following libraries for our prototype:
+
+    <br><br>Recharts – a charting library for data visualization
+
+    <br><br>Material-UI – web components in particular cards.
+
+    <br><br>React-dropzone – Facilities drag and drop uploads
+
+    <br><br>To implement this feature in our docker architecture this required a node.js container built from the
+    node.js image
+    on Docker hub.
+
+    <br><br> Backend:
+
+    <br><br>The backed container is used to perform server-side tasks that are requested by users from the frontend.
+    These tasks
+    include routing email files for scanning and data retrieval from a database.
+
+    <br><br>Our choice of backend was informed by our choice of frontend. Since we were already using JavaScript, it
+    made sense
+    to use a backend server written in the same language. We therefore chose to use Express. Express is well known for
+    its simplicity and is widely used and well maintained. Using Express we were able to quickly create a server and add
+    routes for the features we wanted to implement.
+
+    <br><br>To implement this service in our docker architecture required a node.js container built from the node.js
+    image
+    available on Docker hub.
+
+    <br><br>The decision to shift from a standalone application that could be downloaded by a user onto a local machine
+    and be
+    available at locations such as the Microsoft Store was twofold. Firstly, the ambitious goal of app development could
+    have easily been met with scope creep due to technical configuration errors, user hardware incompatibility issues
+    and the risk of developers requiring more time than given to refine the product to a workable level. Secondly, the
+    alternative concept of a cloud-based architecture meant utilising the SaaS (Software as a Service) benefits of
+    monitoring and elastic provisioning of resources. This, along with the added benefit of being able to shift the
+    scope from complex back-end coding of additional functionality to a more time friendly feasible goal of improved UI
+    functionality and user access. Testing was also improved as all team members could test the usability of the
+    dashboard interface, as opposed to only experienced developers being able to access, test and fix the backend
+    functionality of the program.
+
+    <br><br>Email Scanning:
+
+    <br><br>Our project is focused on cybersecurity and providing tools to help people protect themselves from malicious emails.
+    Our MVF prototype required at least 1 email security feature. Through research we found the project ClamAV, an
+    open-source virus scanning software. The ClamAV project is well maintained and has many large sponsors. In addition
+    to we would not be required to build a container to implement ClamAV in docker as they have recently update docker
+    image that we could pull for our project.
+
+    <br><br>Future Planning and Potential Handover:
+
+    <br><br>The next stages of adding functionality to the application would be to add a service for data persistence and then a
+    service for creating and validating users. This would be developed in tangent with additional website functionality,
+    including provisioning an escrow service to allow for secure payments of services such as the sale of product
+    licenses and any potential future products that could be introduced into the PhishNet cybersecurity ecosystem.
+    Security via cloud services would also allow for users to securely login with their email or google account
+    information and experience a fully customised website account that could save credentials and provide further
+    suggested content.
+
+    <br><br> Our current project snapshot reveals some planning towards future MVF goals that, if given additional time, a team
+    could pick up given the right experiences. Although the scope pivoted from implementing further anti-phishing
+    technologies and API (Application Programming Interface) connectivity with email clients, these would still be
+    achievable goals for future implementation and necessary functions for a full scale roll out. In the event of a
+    handover, it would be expected that any team could continue working on this project by accessing the MVF
+    spreadsheet, the Issue Register and the Trello Board to gauge a timeline of events leading up to present day along
+    with the successes and failures that the previous team encountered. It would also be feasible for this new team to
+    change to another SDLC methodology if desired and still refer to previous documentation and meeting minutes and
+    apply them to future integration. The previous documentation of bugs along with installation/technical manuals on
+    how to use PhishNet would also benefit a new team by cataloguing not just what has and has not been accomplished
+    within the project but also the technical requirements to run the software. This, along with documentation on user
+    requirements, paints a clear picture of the intent and motivations of the current team and always a future team in
+    the event of handover the option to continue the project as intended or potentially change scope depending on
+    stakeholder wants and needs. For example, a new team my opt to remove cloud functionality for an application that a
+    user can download to a local machine.
+  </div>
+
+</body>
+
+</html>
